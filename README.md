@@ -1,5 +1,5 @@
 <!-- Header -->
-<h1 align="center">Hey, its Harvind Here! 👋</h1>
+<h1 align="center">Hey, its Harvind here! 👋</h1>
 <h3 align="center">Aspiring ML Engineer | AI & ML Enthusiast</h3>
 
 <!-- Bio -->
