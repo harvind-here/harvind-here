@@ -14,6 +14,7 @@
   <img src="https://img.shields.io/badge/HTML-3776AB?style=flat-square&logo=html&logoColor=white" alt="HTML">
   <img src="https://img.shields.io/badge/Machine%20Learning-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Machine Learning">
   <img src="https://img.shields.io/badge/Fine%20Tuning-39C0BA?style=flat-square&logo=finetuning&logoColor=white" alt="Fine-Tuning">
+  <img src="https://img.shields.io/badge/Data%20Handling-FFA518?style=flat-square&logo=datahandling&logoColor=white" alt="Data Handling">
   <img src="https://img.shields.io/badge/Web%20Scrapping-FFA518?style=flat-square&logo=webscrapping&logoColor=white" alt="Web Scrapping">
 </p>
 
