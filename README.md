@@ -28,7 +28,7 @@
 
 <!-- Favorite Quote -->
 <h3 align="center">I always run this code to myself:</h3>
-<blockquote align="center">"best model = model.save()"</blockquote>
+<blockquote align="center">best model = model.save()</blockquote>
 
 <!---
 harvind-here/harvind-here is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
