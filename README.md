@@ -3,7 +3,7 @@
 <h3 align="center">Aspiring AI/ML Engineer | AI & ML Enthusiast</h3>
 
 <!-- Bio -->
-<p align="center">I'm passionate about Artificial Intelligence and Machine Learning. Currently diving deep into Exploratory Data Analysis, Machine Learning algorithms, CI/CD pipelines, and striving to become an industry-ready AI/ML Engineer!</p>
+<p align="center">I'm passionate about Artificial Intelligence and Machine Learning. Currently working with Machine Learning and Neural Netoworks, striving to become an industry-ready AI/ML Engineer!</p>
 
 <!-- Skills -->
 <h3 align="center">Skills:</h3>
