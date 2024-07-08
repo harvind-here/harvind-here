@@ -3,7 +3,7 @@
 <h3 align="center">Aspiring AI Developer | AI & ML Enthusiast</h3>
 
 <!-- Bio -->
-<p align="center">I'm passionate about Artificial Intelligence and Machine Learning. Currently feeding my curiosity on Machine Learning and Neural Networks, striving to become an industry-ready AI/ML Engineer!</p>
+<p align="center">I'm passionate about Artificial Intelligence and Machine Learning. Currently indulging in Neural Networks and Web Development striving to become an industry-ready AI/ML Developer!</p>
 
 <!-- Skills -->
 <h3 align="center">Skills:</h3>
