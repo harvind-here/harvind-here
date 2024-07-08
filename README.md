@@ -4,7 +4,7 @@
 
 <!-- Bio -->
 <p align="center">A guy with interests on AI and Web Development?? The answer is Yes!
-Currently indulging in Neural Networks and Web Development striving to become an industry-ready AI/ML Developer!</p>
+Currently learning and gaining experiences on Neural Networks and Web Development and nothing but keeping myself engaged✅...</p>
 
 <!-- Skills -->
 <h3 align="center">Skills:</h3>
