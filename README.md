@@ -9,6 +9,7 @@
 <h3 align="center">Skills:</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Flask">
    <img src="https://img.shields.io/badge/C-3776AB?style=flat-square&logo=c++&logoColor=white" alt="C">
   <img src="https://img.shields.io/badge/C++-3776AB?style=flat-square&logo=c++&logoColor=white" alt="C++">
   <img src="https://img.shields.io/badge/HTML-3776AB?style=flat-square&logo=html&logoColor=white" alt="HTML">
