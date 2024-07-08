@@ -10,7 +10,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Flask">
-  <img src="https://img.shields.io/badge/C++-3776AB?style=flat-square&logo=c++&logoColor=white" alt="C/C++">
+  <img src="https://img.shields.io/badge/C/C++-3776AB?style=flat-square&logo=c++&logoColor=white" alt="C/C++">
   <img src="https://img.shields.io/badge/HTML-3776AB?style=flat-square&logo=html&logoColor=white" alt="HTML">
   <img src="https://img.shields.io/badge/Machine%20Learning-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Machine Learning">
   <img src="https://img.shields.io/badge/Fine%20Tuning-39C0BA?style=flat-square&logo=finetuning&logoColor=white" alt="Fine-Tuning">
