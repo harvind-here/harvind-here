@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Flask">
   <img src="https://img.shields.io/badge/C/C++-3776AB?style=flat-square&logo=c++&logoColor=white" alt="C/C++">
-  <img src="https://img.shields.io/badge/Web Development-FDF716?style=flat-square&logo=html&logoColor=brown" alt="Web Development">
+  <img src="https://img.shields.io/badge/Web Development-CC6600?style=flat-square&logo=html&logoColor=brown" alt="Web Development">
   <img src="https://img.shields.io/badge/Machine%20Learning-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Machine Learning">
   <img src="https://img.shields.io/badge/Fine%20Tuning-39C0BA?style=flat-square&logo=finetuning&logoColor=white" alt="Fine-Tuning">
   <img src="https://img.shields.io/badge/Data%20Handling-FFA518?style=flat-square&logo=datahandling&logoColor=white" alt="Data Handling">
