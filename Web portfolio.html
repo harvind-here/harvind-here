@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvind Mukhal Muthukumar</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            align-items: center;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #161d3f; /* Dark Blue */
+            color: #3c77bf; /* Light grey */
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Profile Image Styles */
+        .profile-image {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            top: 30%;
+            left: 50%;
+            align-items: center;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        /* Profile Image after Scroll */
+        .profile-image.small {
+            width: 80px;
+            height: 80px;
+            top: 40px;
+            left: 40px;
+            transform: none;
+        }
+        
+        /* Adjusted spacing for sections */
+        .section {
+            padding: 0px 100px;
+            max-width: 800px;
+            margin: 20vh auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(50px); /* Initial position */
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .section.left-visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .section.left-hidden {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+
+        .section.right-visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .section.right-hidden {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+
+        .section h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #4a90e2; /* Light Blue */
+        }
+
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+            color: #ffffff; /* Light grey */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section h2 {
+                font-size: 2.5em;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+
+            .profile-image.small {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        /* Neural Network Background */
+        #neuralNetwork {
+            position: fixed;
+            top: 65%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .node {
+            fill: #4a91e29e; /* Light Blue */
+            stroke: #ffffff59; /* White */
+            stroke-width: 2;
+            opacity: 0; /* Initially hidden */
+        }
+
+        .connection {
+            stroke: #4a90e2; /* Light Blue */
+            stroke-width: 1;
+            opacity: 0; /* Initially hidden */
+            stroke-dasharray: 5,5;
+            transition: opacity 1.0s ease, stroke-dashoffset 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\harvi\OneDrive\Pictures\Saved Pictures\MyDigitalProfile2(Small).jpg" alt="Profile Image" class="profile-image" id="profileImage">
+
+    <div class="section left-hidden" id="about" style="margin-top: 500px;">
+        <h2>I am😊</h2>
+        <p>I am Harvind Mukhal Muthukumar, an enthusiastic engineer persuing Electronics and Communication engineering. I have a keen interest in AI & ML, and I'm passionate about LLMs, AI systems. I talk and do AI stuffs!</p>
+    </div>
+
+    <div class="section right-hidden" id="skills">
+        <h2>I can👍</h2>
+        <img src="C:\Users\harvi\aiui\MyDigitalProfile1.jpg" alt="About Image" style="width: 30; height:auto;">
+        <div class="skills-content">
+            <p>AI | ML | Full-stack</p>
+        </div>
+    </div>
+
+    <div class="section left-hidden" id="projects">
+        <h2>I did✅</h2>
+        <img src="C:\Users\harvi\aiui\AthenSS.png" alt="About Image" style="width:100%; height:auto;">
+        <div class="projects-content">
+            <p><strong>ATHEN</strong> - A web app based virtual assistant using Llama3 70b which can schedule and manage user events and appoinments, agentic LLM capabilities and many more.</p>
+            <p><strong>TERRAIN EYE</strong> - An image classification model focusing on terrain identification using aerial images, achieving 97% accuracy by fine-tuning the EfficientNetB7 model.</p>
+            <p><strong>SENTIMENT ANALYSIS</strong> - Developed a sentiment analysis and emotion detection system using IBM Watson AI, Flask, and Python.</p>
+            <p><strong>FINDS</strong> - A fake news detection system analyzing content, images, and links in news articles using supervised learning algorithms and a popular open-source model.</p>
+        </div>
+    </div>
+
+    <div class="section left-hidden" id="contact">
+        <h2>I'm here😀</h2>
+        <div class="contact-content">
+            <p>Email: <a href="https://harvindmukhal3@gmail.com" style="color: rgb(70, 155, 230);">harvindmukhal3@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/harvind-here" style="color: rgb(70, 155, 230);">harvind-here</a></p>
+            <p>X: <a href="https://x.com/harvind_here" style="color: rgb(70, 155, 230);">harvind_here</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/harvind-mukhal-muthukumar-47561a24a/" style="color: rgb(70, 155, 230);">Harvind Mukhal Muthukumar</a></p>
+        </div>
+    </div>
+    <svg id="neuralNetwork" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+        <!-- Define layers -->
+        <g id="layer1">
+            <circle class="node" cx="100" cy="100" r="10"/>
+            <circle class="node" cx="100" cy="200" r="10"/>
+            <circle class="node" cx="100" cy="300" r="10"/>
+            <circle class="node" cx="100" cy="400" r="10"/>
+        </g>
+        <g id="layer2">
+            <circle class="node" cx="300" cy="100" r="10"/>
+            <circle class="node" cx="300" cy="200" r="10"/>
+            <circle class="node" cx="300" cy="300" r="10"/>
+            <circle class="node" cx="300" cy="400" r="10"/>
+        </g>
+        <g id="layer3">
+            <circle class="node" cx="500" cy="100" r="10"/>
+            <circle class="node" cx="500" cy="200" r="10"/>
+            <circle class="node" cx="500" cy="300" r="10"/>
+            <circle class="node" cx="500" cy="400" r="10"/>
+        </g>
+        <g id="layer4">
+            <circle class="node" cx="700" cy="100" r="10"/>
+            <circle class="node" cx="700" cy="200" r="10"/>
+            <circle class="node" cx="700" cy="300" r="10"/>
+            <circle class="node" cx="700" cy="400" r="10"/>
+        </g>
+        <g id="layer5">
+            <circle class="node" cx="900" cy="100" r="10"/>
+            <circle class="node" cx="900" cy="200" r="10"/>
+            <circle class="node" cx="900" cy="300" r="10"/>
+            <circle class="node" cx="900" cy="400" r="10"/>
+        </g>
+           <!-- Define connections -->
+        <g id="connections">
+            <!-- Layer 1 to Layer 2 -->
+            <line class="connection" x1="100" y1="100" x2="300" y2="100"/>
+            <line class="connection" x1="100" y1="100" x2="300" y2="200"/>
+            <line class="connection" x1="100" y1="100" x2="300" y2="300"/>
+            <line class="connection" x1="100" y1="100" x2="300" y2="400"/>
+            <line class="connection" x1="100" y1="200" x2="300" y2="100"/>
+            <line class="connection" x1="100" y1="200" x2="300" y2="200"/>
+            <line class="connection" x1="100" y1="200" x2="300" y2="300"/>
+            <line class="connection" x1="100" y1="200" x2="300" y2="400"/>
+            <line class="connection" x1="100" y1="300" x2="300" y2="100"/>
+            <line class="connection" x1="100" y1="300" x2="300" y2="200"/>
+            <line class="connection" x1="100" y1="300" x2="300" y2="300"/>
+            <line class="connection" x1="100" y1="300" x2="300" y2="300"/>
+            <line class="connection" x1="100" y1="400" x2="300" y2="100"/>
+            <line class="connection" x1="100" y1="400" x2="300" y2="200"/>
+            <line class="connection" x1="100" y1="400" x2="300" y2="300"/>
+            <line class="connection" x1="100" y1="400" x2="300" y2="400"/>
+            <!-- Layer 2 and Layer 3 -->
+            <line class="connection" x1="300" y1="100" x2="500" y2="100"/>
+            <line class="connection" x1="300" y1="100" x2="500" y2="200"/>
+            <line class="connection" x1="300" y1="100" x2="500" y2="300"/>
+            <line class="connection" x1="300" y1="100" x2="500" y2="400"/>
+            <line class="connection" x1="300" y1="200" x2="500" y2="100"/>
+            <line class="connection" x1="300" y1="200" x2="500" y2="200"/>
+            <line class="connection" x1="300" y1="200" x2="500" y2="300"/>
+            <line class="connection" x1="300" y1="200" x2="500" y2="400"/>
+            <line class="connection" x1="300" y1="300" x2="500" y2="100"/>
+            <line class="connection" x1="300" y1="300" x2="500" y2="200"/>
+            <line class="connection" x1="300" y1="300" x2="500" y2="300"/>
+            <line class="connection" x1="300" y1="300" x2="500" y2="400"/>
+            <line class="connection" x1="300" y1="400" x2="500" y2="100"/>
+            <line class="connection" x1="300" y1="400" x2="500" y2="200"/>
+            <line class="connection" x1="300" y1="400" x2="500" y2="300"/>
+            <line class="connection" x1="300" y1="400" x2="500" y2="400"/>
+            <!-- Layer 3 and Layer 4 -->
+            <line class="connection" x1="500" y1="100" x2="700" y2="100"/>
+            <line class="connection" x1="500" y1="100" x2="700" y2="200"/>
+            <line class="connection" x1="500" y1="100" x2="700" y2="300"/>
+            <line class="connection" x1="500" y1="100" x2="700" y2="400"/>
+            <line class="connection" x1="500" y1="200" x2="700" y2="100"/>
+            <line class="connection" x1="500" y1="200" x2="700" y2="200"/>
+            <line class="connection" x1="500" y1="200" x2="700" y2="300"/>
+            <line class="connection" x1="500" y1="200" x2="700" y2="400"/>
+            <line class="connection" x1="500" y1="300" x2="700" y2="100"/>
+            <line class="connection" x1="500" y1="300" x2="700" y2="200"/>
+            <line class="connection" x1="500" y1="300" x2="700" y2="300"/>
+            <line class="connection" x1="500" y1="300" x2="700" y2="400"/>
+            <line class="connection" x1="500" y1="400" x2="700" y2="100"/>
+            <line class="connection" x1="500" y1="400" x2="700" y2="200"/>
+            <line class="connection" x1="500" y1="400" x2="700" y2="300"/>
+            <line class="connection" x1="500" y1="400" x2="700" y2="400"/>
+            <!-- Layer 4 and Layer 5 -->
+            <line class="connection" x1="700" y1="100" x2="900" y2="100"/>
+            <line class="connection" x1="700" y1="100" x2="900" y2="200"/>
+            <line class="connection" x1="700" y1="100" x2="900" y2="300"/>
+            <line class="connection" x1="700" y1="100" x2="900" y2="400"/>
+            <line class="connection" x1="700" y1="200" x2="900" y2="100"/>
+            <line class="connection" x1="700" y1="200" x2="900" y2="200"/>
+            <line class="connection" x1="700" y1="200" x2="900" y2="300"/>
+            <line class="connection" x1="700" y1="200" x2="900" y2="400"/>
+            <line class="connection" x1="700" y1="300" x2="900" y2="100"/>
+            <line class="connection" x1="700" y1="300" x2="900" y2="200"/>
+            <line class="connection" x1="700" y1="300" x2="900" y2="300"/>
+            <line class="connection" x1="700" y1="300" x2="900" y2="400"/>
+            <line class="connection" x1="700" y1="400" x2="900" y2="100"/>
+            <line class="connection" x1="700" y1="400" x2="900" y2="200"/>
+            <line class="connection" x1="700" y1="400" x2="900" y2="300"/>
+            <line class="connection" x1="700" y1="400" x2="900" y2="400"/>
+        </g>
+    </svg>
+    
+    <script>
+      const transitionDelay = 200; // Adjust the delay between section transitions
+    
+      window.addEventListener('scroll', function () {
+        const sections = document.querySelectorAll('.section');
+        const scrollPosition = window.scrollY;
+        const maxScroll = document.body.scrollHeight - window.innerHeight;
+        const progress = scrollPosition / maxScroll;
+    
+        // Get all nodes and connections
+        const nodes = document.querySelectorAll('.node');
+        const connections = document.querySelectorAll('.connection');
+    
+        sections.forEach((section, index) => {
+          const sectionRect = section.getBoundingClientRect();
+          const sectionTop = sectionRect.top;
+          const sectionHeight = sectionRect.height;
+    
+          // Check if the section is within the viewport
+          if (sectionTop <= window.innerHeight && sectionTop + sectionHeight >= 0) {
+            // Add delay based on index to maintain sequential appearance
+            setTimeout(() => {
+              if (index % 2 === 0) {
+                section.classList.add('left-visible');
+                section.classList.remove('left-hidden');
+                section.classList.remove('right-visible');
+                section.classList.remove('right-hidden');
+              } else {
+                section.classList.add('right-visible');
+                section.classList.remove('right-hidden');
+                section.classList.remove('left-visible');
+                section.classList.remove('left-hidden');
+              }
+            }, transitionDelay * index); // Uniform transition delay based on section index
+          } else {
+            // Ensure sections are reset if not visible
+            if (sectionTop + sectionHeight < 0 || sectionTop > window.innerHeight) {
+              if (index % 2 === 0) {
+                section.classList.add('left-hidden');
+                section.classList.remove('left-visible');
+                section.classList.remove('right-visible');
+                section.classList.remove('right-hidden');
+              } else {
+                section.classList.add('right-hidden');
+                section.classList.remove('right-visible');
+                section.classList.remove('left-visible');
+                section.classList.remove('left-hidden');
+              }
+            }
+          }
+        });
+    
+        // Activate profile image
+        const profileImage = document.getElementById('profileImage');
+        if (scrollPosition > 100) {
+          profileImage.classList.add('small');
+        } else {
+          profileImage.classList.remove('small');
+        }
+    
+        // Activate nodes and connections
+        nodes.forEach((node, index) => {
+          if (progress > (index + 1) / nodes.length) {
+            node.style.opacity = 1;
+          } else {
+            node.style.opacity = 0;
+          }
+        });
+    
+        // Activate connections
+        connections.forEach((connection, index) => {
+          if (progress > (index + 1) / connections.length) {
+            connection.style.opacity = 1;
+            connection.style.strokeDashoffset = (1 - progress) * 1000; // Adjust as needed
+          } else {
+            connection.style.opacity = 0;
+          }
+        });
+      });
+    </script>
+</body>
+</html>
