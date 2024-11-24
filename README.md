@@ -13,9 +13,11 @@ Currently learning and gaining experiences on Neural Networks and Web Developmen
   <img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Flask">
   <img src="https://img.shields.io/badge/C/C++-3776AB?style=flat-square&logo=c++&logoColor=white" alt="C/C++">
   <img src="https://img.shields.io/badge/Web Development-CC6600?style=flat-square&logo=html&logoColor=brown" alt="Web Development">
+  <img src="https://img.shields.io/badge/Docker-CC6600?style=flat-square&logo=html&logoColor=brown" alt="Docker">
+  <img src="https://img.shields.io/badge/LLMs(RAG, Fine tuning, Agents)-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="LLMs">
   <img src="https://img.shields.io/badge/Machine%20Learning-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Machine Learning">
   <img src="https://img.shields.io/badge/Fine%20Tuning-39C0BA?style=flat-square&logo=finetuning&logoColor=white" alt="Fine-Tuning">
-  <img src="https://img.shields.io/badge/Data Science and %20Visualization-FFA518?style=flat-square&logo=datahandling&logoColor=white" alt="Data Science and Visualisation">
+  <img src="https://img.shields.io/badge/Data Analysis and %20Visualization-FFA518?style=flat-square&logo=datahandling&logoColor=white" alt="Data Analysis and Visualisation">
 <!-- Contact -->
 <h3 align="center">Reach me:</h3>
 <p align="center">
