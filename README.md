@@ -15,7 +15,7 @@ Currently learning and working with DNN and touching DSA time to time, nothing b
   <img src="https://img.shields.io/badge/Docker-CC6600?style=flat-square&logo=html&logoColor=brown" alt="Docker">
   <img src="https://img.shields.io/badge/LLMOps(RAG, LC, Fine tuning, Agents, CoT)-39C0BA?style=flat-square&logo=html&logoColor=brown" alt="LLMOps">
   <img src="https://img.shields.io/badge/Machine%20Learning-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Machine Learning">
-  <img src="https://img.shields.io/badge/LLMs-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Deep Learning">
+  <img src="https://img.shields.io/badge/Deep Learning-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Deep Learning">
   <img src="https://img.shields.io/badge/Data Analysis and %20Visualization-FFA518?style=flat-square&logo=datahandling&logoColor=white" alt="Data Analysis and Visualisation">
 <!-- Contact -->
 <h3 align="center">Reach me:</h3>
