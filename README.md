@@ -30,7 +30,7 @@ Currently learning and working with DNN and touching DSA time to time, nothing b
  
  ```python
  if val < best_val: 
-     torch.save(model)
+     torch.save(model, brain)
  ```
 
 
