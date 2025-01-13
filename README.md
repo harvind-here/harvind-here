@@ -30,7 +30,7 @@ Currently learning and working with DNN and touching DSA time to time, nothing b
  
  ```python
  if progress: 
-     torch.save(knowledge, brain)
+     torch.save(knowledge, 'brain')
  ```
 
 
