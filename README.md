@@ -10,13 +10,12 @@ Currently learning and working with DNN and touching DSA time to time, nothing b
 <h3 align="center">Skills:</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Flask">
   <img src="https://img.shields.io/badge/C/C++-3776AB?style=flat-square&logo=c++&logoColor=white" alt="C/C++">
-  <img src="https://img.shields.io/badge/LLMOps-39C0BA?style=flat-square&logo=html&logoColor=brown" alt="LLMOps">
+  <img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Flask">
   <img src="https://img.shields.io/badge/Docker-CC6600?style=flat-square&logo=html&logoColor=brown" alt="Docker">
-  <img src="https://img.shields.io/badge/LLMs(RAG, Fine tuning, Agents)-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="LLMs">
+  <img src="https://img.shields.io/badge/LLMOps(RAG, LC, Fine tuning, Agents, CoT)-39C0BA?style=flat-square&logo=html&logoColor=brown" alt="LLMOps">
   <img src="https://img.shields.io/badge/Machine%20Learning-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Machine Learning">
-  <img src="https://img.shields.io/badge/Fine%20Tuning-39C0BA?style=flat-square&logo=finetuning&logoColor=white" alt="Fine-Tuning">
+  <img src="https://img.shields.io/badge/LLMs-39C0BA?style=flat-square&logo=ml&logoColor=white" alt="Deep Learning">
   <img src="https://img.shields.io/badge/Data Analysis and %20Visualization-FFA518?style=flat-square&logo=datahandling&logoColor=white" alt="Data Analysis and Visualisation">
 <!-- Contact -->
 <h3 align="center">Reach me:</h3>
