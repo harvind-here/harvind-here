@@ -1,9 +1,9 @@
 <!-- Header -->
 <h1 align="center">Hey, its Harvind here! 👋</h1>
-<h3 align="center">Aspiring AI Developer | AI & ML Enthusiast</h3>
+<h3 align="center">Aspiring AI Developer | Deep Learning Enthusiast</h3>
 
 <!-- Bio -->
-<p align="center">A guy with interests in AI and Web Development?? The answer is Yes!
+<p align="center">A guy with interests in AI and LLMOps?? The answer is Yes!
 Currently learning and gaining experiences on Neural Networks and Web Development and nothing but keeping myself engaged✅...</p>
 
 <!-- Skills -->
