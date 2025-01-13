@@ -27,6 +27,7 @@ Currently learning and working with DNN and touching DSA time to time, nothing b
 
 <!-- Favorite Quote -->
 <h3 align="center">I always run this code to myself:</h3>
+ 
  ```python
  if val < best_val: 
      torch.save(model)
