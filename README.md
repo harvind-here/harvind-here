@@ -27,8 +27,11 @@ Currently learning and working with DNN and touching DSA time to time, nothing b
 
 <!-- Favorite Quote -->
 <h3 align="center">I always run this code to myself:</h3>
-<blockquote align="center">if val<best_val : 
-                              torch.save(model)</blockquote>
+ ```python
+ if val < best_val: 
+     torch.save(model)
+ ```
+
 
 <!---
 harvind-here/harvind-here is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
