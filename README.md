@@ -4,7 +4,7 @@
 
 <!-- Bio -->
 <p align="center">A guy with interests in AI and LLMOps?? The answer is Yes!
-Currently learning and working with DNN and touching DSA time to time, nothing but keeping myself engaged...</p>
+Currently learning and working with DNN and keeping in touch with DSA, nothing but keeping myself engaged...</p>
 
 <!-- Skills -->
 <h3 align="center">Skills:</h3>
