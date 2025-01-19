@@ -1,6 +1,6 @@
 <!-- Header -->
 <h1 align="center">Hey, its Harvind here! 👋</h1>
-<h3 align="center">Aspiring AI Developer | Deep Learning Enthusiast</h3>
+<h3 align="center">Aspiring AI Developer | Deep Learning </h3>
 
 <!-- Bio -->
 <p align="center">A guy with interests in AI and LLMOps?? The answer is Yes!
