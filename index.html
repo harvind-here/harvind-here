@@ -222,6 +222,11 @@
       if (greetingEl && greetingEl.getAttribute('data-text')) {
         typeWriter(greetingEl, greetingEl.getAttribute('data-text'), 50);
       }
+      const nameEl = document.querySelector('.name');
+      if (nameEl && nameEl.getAttribute('data-text')) {
+        typeWriter(nameEl, nameEl.getAttribute('data-text'), 50);
+      }
+
       // Animate responses once when they come into view (excluding contact)
       const responses = document.querySelectorAll(".response:not(.contact)");
       const observer = new IntersectionObserver((entries, obs) => {
