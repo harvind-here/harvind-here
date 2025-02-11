@@ -2,9 +2,6 @@
 <h1 align="center">Hey, its Harvind here! 👋</h1>
 <h3 align="center">Aspiring AI Developer | Deep Learning </h3>
 
-<!-- Website -->
-<h1 align="center">https://harvind-here.github.io/harvind-here/</h1>
-
 <!-- Bio -->
 <p align="center">A guy with interests in AI and LLMOps?? The answer is Yes!
 Currently learning and working with DNN and keeping in touch with DSA, nothing but keeping myself engaged...</p>
@@ -25,7 +22,8 @@ Currently learning and working with DNN and keeping in touch with DSA, nothing b
 <p align="center">
   <a href="mailto:harvindmukhal3@gmail.com">Email</a> | 
   <a href="https://www.linkedin.com/in/harvind-mukhal-muthukumar-47561a24a/">LinkedIn</a> |
-  <a href="https://twitter.com/harvind_here">X</a>
+  <a href="https://twitter.com/harvind_here">X</a> | 
+  <a href="https://harvind-here.github.io/harvind-here/">Website</h1>
 </p>
 
 <!-- Favorite Quote -->
