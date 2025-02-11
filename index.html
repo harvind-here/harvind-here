@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harvind Mukhal Muthukumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Base & Matte Background with Gradient Shift */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #161d3f, #12182b),
+                  url('https://www.transparenttextures.com/patterns/black-linen.png');
+      background-blend-mode: multiply;
+      background-size: cover;
+      color: #eee;
+      scroll-behavior: smooth;
+    }
+    /* Navigation */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      background: rgba(20, 24, 35, 0.9); padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav ul li { margin: 0 1rem; }
+    nav ul li a { text-decoration: none; color: #eee; font-weight: 600; transition: color 0.3s; }
+    nav ul li a:hover { color: #1abc9c; }
+    /* Hero Section with bgnd_top.png in background */
+    header.hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding-top: 80px;
+      text-align: center;
+      background: url('bgnd_top.png') center/cover no-repeat;
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center;
+    }
+    .greeting {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #61ebcf;
+    }
+    header.hero img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    header.hero h1 { margin: 1rem 0 0.5rem; font-size: 2.5rem; }
+    header.hero p { font-size: 1.2rem; max-width: 600px; }
+    /* Social Media Icons below tagline */
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      color: #eee;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .social-icons a:hover {
+      color: #1abc9c;
+      transform: scale(1.2);
+    }
+        /* Main Sections Montage Background */
+        main {
+      position: relative;
+      z-index: 1;
+    }
+    main::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('MyDigitalProfile1.jpg') center/cover no-repeat;
+      opacity: 0.15;
+      transform: rotate(0deg);
+      z-index: -1;
+    }
+    /* Section Container */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    section.visible { opacity: 1; transform: translateY(0); }
+    .section-container {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .query, .response {
+      flex: 1;
+      min-width: 280px;
+      padding: 1rem;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .query:hover, .response:hover { transform: scale(1.02); background: rgba(0, 0, 0, 0.4); }
+    .query h2 { font-size: 1.8rem; color: #1abc9c; }
+    /* Projects: Each project on a new line */
+    .projects .response { white-space: pre-line; }
+    /* Contact Section: Line-by-line hyperlinks */
+    .contact p { margin-bottom: 0.8rem; text-align: center; }
+    .contact a {
+      color: #1abc9c;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .contact a:hover { color: #16a085; }
+    /* Responsive */
+    @media(max-width: 768px) {
+      header.hero h1 { font-size: 2rem; }
+      header.hero p { font-size: 1rem; }
+      .section-container { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">What I Do</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <div class="greeting" data-text="Hi! It's Harvind here!"></div>
+    <img src="MyDigitalProfile2(Small).jpg" alt="Profile Image" id="profileImage">
+    <h1>Harvind Mukhal Muthukumar</h1>
+    <p>AI | DL | LLMOps | IoT</p>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://x.com/harvind_here" target="_blank" aria-label="X Profile"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/harvind-mukhal-muthukumar-47561a24a/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:harvindmukhal3@gmail.com" target="_blank" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/harvind-here" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <div class="section-container">
+        <div class="query">
+          <h2>About Me</h2>
+        </div>
+        <div class="response" data-text="I am an aspiring AI developer passionate about exploring AI, deep learning, and IoT. My journey is fueled by curiosity and creativity."></div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="section-container">
+        <div class="query">
+          <h2>What I Do</h2>
+        </div>
+        <div class="response" data-text="I specialize in crafting innovative solutions in AI, DL, LLMOps, and IoT. I transform complex challenges into elegant, effective code."></div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="section-container">
+        <div class="query">
+          <h2>Projects</h2>
+        </div>
+        <div class="response" data-text="ATHEN: Assistant That Helps for Everyday Needs is a web‑based virtual assistant using Llama3.3 70b which can manage calendar, access internet and controls IoT, also supports call interaction.
+
+        TERRAIN EYE: A Transfer learned aerial image classification model. For terrain identification and recognition by drones.
+
+        ENTERPRISE ASSISTANT: A chatbot for streamlining IT knowledge and employee management for an Enterprise/Company."></div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-container">
+        <div class="query">
+          <h2>Contact</h2>
+        </div>
+        <div class="response contact" data-text="Feel free to reach out:">
+          <p>Email: <a href="mailto:harvindmukhal3@gmail.com">harvindmukhal3@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/harvind-here" target="_blank">harvind-here</a></p>
+          <p>X: <a href="https://x.com/harvind_here" target="_blank">harvind_here</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/harvind-mukhal-muthukumar-47561a24a/" target="_blank">Harvind Mukhal Muthukumar</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    // Typewriter animation function (runs once per element)
+    function typeWriter(el, text, speed = 50) {
+      let index = 0;
+      function type() {
+        if (index < text.length) {
+          el.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(type, speed);
+        }
+      }
+      type();
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      // Animate greeting immediately
+      const greetingEl = document.querySelector('.greeting');
+      if (greetingEl && greetingEl.getAttribute('data-text')) {
+        typeWriter(greetingEl, greetingEl.getAttribute('data-text'), 50);
+      }
+      // Animate responses once when they come into view (excluding contact)
+      const responses = document.querySelectorAll(".response:not(.contact)");
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !entry.target.dataset.animated) {
+            const fullText = entry.target.getAttribute("data-text");
+            entry.target.innerHTML = "";
+            typeWriter(entry.target, fullText);
+            entry.target.dataset.animated = "true";
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      responses.forEach(r => observer.observe(r));
+      // Fade in sections (only once)
+      const sections = document.querySelectorAll("section");
+      const sectionObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      sections.forEach(sec => sectionObserver.observe(sec));
+      // Scale profile image on scroll
+      window.addEventListener("scroll", function() {
+        const profileImage = document.getElementById("profileImage");
+        profileImage.style.transform = window.scrollY > 50 ? "scale(0.8)" : "scale(1)";
+      });
+    });
+  </script>
+</body>
+</html>
