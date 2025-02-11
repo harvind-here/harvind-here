@@ -3,7 +3,7 @@
 <h3 align="center">Aspiring AI Developer | Deep Learning </h3>
 
 <!-- Website -->
-https://harvind-here.github.io/harvind-here/
+<h1 align="center">https://harvind-here.github.io/harvind-here/</h1>
 
 <!-- Bio -->
 <p align="center">A guy with interests in AI and LLMOps?? The answer is Yes!
