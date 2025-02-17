@@ -3,8 +3,8 @@
 <h3 align="center">Aspiring AI Developer | Deep Learning </h3>
 
 <!-- Bio -->
-<p align="center">A guy with interests in AI and LLMOps?? The answer is Yes!
-Currently learning and working with DNN and keeping in touch with DSA, nothing but keeping myself engaged...</p>
+<p align="center">A guy with interests in AI and LLMOps?? The answer is Yes! With a better understanding and experience with DL models, I can contribute in developing, maintaining, experimenting and deploying AI solutions.
+Currently learning and working with DNN and Leetcoding time to time, nothing but keeping myself engaged...</p>
 
 <!-- Agents -->
 <h3 align="center">Agents I developed and use for my work/routine:</h3>
