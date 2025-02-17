@@ -5,7 +5,7 @@
 <!-- Bio -->
 <p align="center">A guy with interests in AI and LLMOps?? The answer is Yes!
 Currently learning and working with DNN and keeping in touch with DSA, nothing but keeping myself engaged...</p>
-
+<p align="center">Agents that I developed and use for my work/routine: Web_agent - IoT_agent - Scheduling_agent - Doc_agent.
 <!-- Skills -->
 <h3 align="center">Skills:</h3>
 <p align="center">
