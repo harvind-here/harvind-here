@@ -7,7 +7,7 @@
 Currently learning DL and Leetcoding time to time, nothing but keeping myself engaged...</p>
 
 <!-- Agents -->
-<h3 align="center">Agents I developed and use for my work/routine:</h3>
+<h3 align="center">Agents That I developed and use for my work/routine:</h3>
 <p align="center">
   🤖 Web_agent<br>
   🤖 IoT_agent<br>
