@@ -1,0 +1,219 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 180 60% 95%; /* Light Teal #E0F8F8 */
+    --foreground: 200 15% 25%; /* Dark Slate Blue/Grey for text */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 200 15% 25%; /* Dark Slate Blue/Grey for card text */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 200 15% 25%; /* Dark Slate Blue/Grey for popover text */
+    --primary: 180 100% 25%; /* Deep Teal #008080 */
+    --primary-foreground: 180 60% 95%; /* Light Teal for text on primary elements */
+    --secondary: 180 40% 90%; /* Slightly darker/muted teal */
+    --secondary-foreground: 180 100% 20%; /* Darker teal for text on secondary */
+    --muted: 180 30% 88%; /* Lighter teal/grey for muted backgrounds */
+    --muted-foreground: 180 25% 55%; /* Medium teal/grey for muted text */
+    --accent: 16 43% 52%; /* Terracotta #B86950 */
+    --accent-foreground: 10 50% 96%; /* Very light, almost white, for text on accent */
+    --destructive: 0 84.2% 60.2%; /* Standard red */
+    --destructive-foreground: 0 0% 98%; /* Light text for destructive elements */
+    --border: 180 35% 80%; /* Soft teal border */
+    --input: 180 35% 88%; /* Slightly lighter than border for input fields */
+    --ring: 180 100% 35%; /* Brighter teal for focus rings */
+    --radius: 0.5rem;
+    --chart-1: 180 100% 30%;
+    --chart-2: 16 50% 60%;
+    --chart-3: 200 20% 40%;
+    --chart-4: 180 80% 40%;
+    --chart-5: 16 30% 40%;
+    --sidebar-background: 200 10% 15%; /* Darker sidebar for contrast if used */
+    --sidebar-foreground: 200 10% 90%;
+    --sidebar-primary: 180 100% 30%;
+    --sidebar-primary-foreground: 180 60% 95%;
+    --sidebar-accent: 16 43% 52%;
+    --sidebar-accent-foreground: 10 50% 96%;
+    --sidebar-border: 200 10% 25%;
+    --sidebar-ring: 180 100% 35%;
+  }
+
+  .dark {
+    --background: 200 15% 10%; /* Dark background for dark mode */
+    --foreground: 180 30% 90%; /* Light teal/grey text */
+    --card: 200 15% 15%; /* Darker card background */
+    --card-foreground: 180 30% 90%; /* Light text for cards */
+    --popover: 200 15% 15%;
+    --popover-foreground: 180 30% 90%;
+    --primary: 180 100% 35%; /* Slightly brighter Deep Teal for dark mode */
+    --primary-foreground: 200 15% 95%; /* Almost white text on primary */
+    --secondary: 200 15% 25%; /* Darker secondary background */
+    --secondary-foreground: 180 30% 85%; /* Lighter text on secondary */
+    --muted: 200 15% 20%;
+    --muted-foreground: 180 25% 65%;
+    --accent: 16 50% 60%; /* Slightly brighter Terracotta */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 200 15% 30%;
+    --input: 200 15% 35%;
+    --ring: 180 100% 45%; /* Brighter ring for dark mode */
+    --chart-1: 180 100% 40%;
+    --chart-2: 16 60% 70%;
+    --chart-3: 200 25% 50%;
+    --chart-4: 180 70% 50%;
+    --chart-5: 16 40% 50%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html {
+    /* Enable smooth scrolling for anchor links */
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  .container {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+
+  /* Homepage initial animation styles */
+  .home-initial-load .main-navbar {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  .home-initial-load .main-footer {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  .main-navbar,
+  .main-footer {
+    transition-property: opacity, transform;
+    transition-timing-function: ease-out;
+    transition-duration: 1000ms; /* Base duration for nav/footer slide */
+  }
+
+  html.home-animating-in .main-navbar,
+  html.home-animation-done .main-navbar {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 200ms; /* Navbar slides in 200ms after hero starts shrinking */
+  }
+
+  html.home-animating-in .main-footer,
+  html.home-animation-done .main-footer {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 400ms; /* Footer slides in 400ms after hero starts shrinking */
+  }
+}
+
+@layer utilities {
+  .delay-1s {
+    animation-delay: 1s;
+  }
+  .delay-2s {
+    animation-delay: 2s;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes zoomOut {
+    from {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+  .animate-zoomOut {
+    animation: zoomOut 1.5s ease-out forwards;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes scroll-x {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    } /* Scroll one full width of original content for seamless loop */
+  }
+
+  .animate-scroll-x {
+    animation: scroll-x 60s linear infinite; /* Adjust duration for speed */
+  }
+
+  .paused-scroll-animation {
+    animation-play-state: paused;
+  }
+
+  /* For hiding scrollbar specifically for the auto-scrolling component */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Thin scrollbar utility */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted)) transparent;
+  }
+
+  /* Blinking cursor animation */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+}
