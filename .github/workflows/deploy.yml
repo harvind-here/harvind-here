@@ -23,8 +23,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List files in the out directory
+        run: ls -R out
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+          cname: harvind-here.github.io
