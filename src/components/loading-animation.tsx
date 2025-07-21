@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { personalInfo } from '@/data/portfolio-data';
-import { cn } from '@/lib/utils';
+import { cn, asset } from '@/lib/utils';
 
 const LoadingAnimation = ({ onAnimationComplete }: { onAnimationComplete: () => void }) => {
   const [step, setStep] = useState(0);
@@ -33,7 +33,7 @@ const LoadingAnimation = ({ onAnimationComplete }: { onAnimationComplete: () => 
         )}
       >
         <Image
-          src="/banner.png"
+          src={asset("/banner.png")}
           alt="Banner"
           layout="fill"
           objectFit="cover"

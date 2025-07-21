@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 import AutoScrollingProjects from "@/components/auto-scrolling-projects";
 import AnimatedBackgroundShapes from "@/components/animated-background-shapes";
 import { useState, useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { cn, asset } from "@/lib/utils";
 import LoadingAnimation from "@/components/loading-animation";
 
 export default function Home() {
@@ -64,7 +64,7 @@ export default function Home() {
           )}
         >
           <Image
-            src="/banner.png"
+            src={asset("/banner.png")}
             alt="Hero Banner Background"
             fill
             className="object-cover transform scale-150 filter blur-xl" 
@@ -84,7 +84,7 @@ export default function Home() {
         >
           <div className="relative w-full h-full max-w-20xl">
             <Image
-              src="/banner.png"
+              src={asset("/banner.png")}
               alt="Hero Banner"
               fill
               className="object-contain transform scale-120 drop-shadow-2xl filter blur-sm" 

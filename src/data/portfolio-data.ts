@@ -1,4 +1,5 @@
 
+import { asset } from '@/lib/utils';
 import { Github, Linkedin, Mail, X, type LucideIcon, Cpu, BrainCircuit, Code2, Router, BarChartBig, Briefcase, Trophy, MessageSquare, Bot, Database } from 'lucide-react';
 
 export interface LinkEntry {
@@ -106,7 +107,7 @@ export const projects: ProjectEntry[] = [
       'Reduced latency in voice call to less than a second, increased the success rate for tool calling.',
     ],
     technologies: ['Flask', 'React', 'LLM', 'Agents', 'Google Cloud', 'MongoDB', 'OAuth'],
-    imageUrl: '/athen.png',
+    imageUrl: asset('/athen.png'),
     imageHint: 'virtual assistant',
     demoLink: 'https://athen.onrender.com',
   },
@@ -119,7 +120,7 @@ export const projects: ProjectEntry[] = [
       'Optimized for lightweight production and cloud deployment to serve flying objects such as drones.',
     ],
     technologies: ['Computer Vision', 'Finetuning', 'ResNet50v2', 'DNN', 'Cloud Deployment'],
-    imageUrl: '/terrain_eye.png',
+    imageUrl: asset('/terrain_eye.png'),
     imageHint: 'neural network architecture',
     sourceLink: 'https://github.com/harvind-here/TerrainEye',
   },
@@ -133,7 +134,7 @@ export const projects: ProjectEntry[] = [
       'Achieved MSE 0.102 for pose estimation and BLEU-1/4 scores of 0.35/0.19 for captioning through shared feature learning on COCO dataset.',
     ],
     technologies: ['Deep Learning', 'Fine tuning', 'ViTPose', 'Image Captioning', 'Pose Estimation'],
-    imageUrl: '/posecapnet.png',
+    imageUrl: asset('/posecapnet.png'),
     imageHint: 'ai vision',
   },
   {
@@ -146,7 +147,7 @@ export const projects: ProjectEntry[] = [
       'Managed DNS, deployment and optimized production build by 50% using CDNs.',
     ],
     technologies: ['Next.js', 'Vercel', 'DNS', 'CI/CD', 'GitHub Actions'],
-    imageUrl: '/sindhanai.png',
+    imageUrl: asset('/sindhanai.png'),
     imageHint: 'hackathon website',
     demoLink: 'https://sindhanai.in',
   },
@@ -159,7 +160,7 @@ export const projects: ProjectEntry[] = [
       'Implemented Retrieval Augmented Generation for enterprise knowledge updation and bcrypt algorithm for security.',
     ],
     technologies: ['LLMs', 'RAG', 'Conversational AI', 'ChromaDB', 'Security'],
-    imageUrl: '/enterprise.png',
+    imageUrl: asset('/enterprise.png'),
     imageHint: 'chatbot document',
     sourceLink: 'https://github.com/harvind-here/Enterprise-Assistant',
   },
