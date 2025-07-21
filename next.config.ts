@@ -1,10 +1,6 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/harvind-here',
-  assetPrefix: '/harvind-here',
-  trailingSlash: true,
   /* config options here */
   typescript: {
     ignoreBuildErrors: true,
@@ -13,7 +9,6 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
