@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { useState } from "react";
 import { personalInfo } from "@/data/portfolio-data";
-import { cn, asset } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/", label: "Home", icon: Home },
@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 group">
           <Image
-            src={asset("/pfp.png")}
+            src="/pfp.png"
             alt="logo"
             width={32}
             height={32}
@@ -73,7 +73,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center mb-4">
                  <Link href="/" className="flex items-center space-x-2 group" onClick={() => setIsMobileMenuOpen(false)}>
                     <Image
-                      src={asset("/pfp.png")}
+                      src="/pfp.png"
                       alt="logo"
                       width={28}
                       height={28}

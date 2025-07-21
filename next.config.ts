@@ -3,6 +3,7 @@ import type {NextConfig} from 'next';
 const nextConfig: NextConfig = {
   output: 'export',
   basePath: '/harvind-here',
+  assetPrefix: '/harvind-here',
   trailingSlash: true,
   /* config options here */
   typescript: {
