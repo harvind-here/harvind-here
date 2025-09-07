@@ -23,7 +23,7 @@ Currently learning and working with DNN and keeping in touch with DSA, nothing b
   <a href="mailto:harvindmukhal3@gmail.com">Email</a> | 
   <a href="https://www.linkedin.com/in/harvind-mukhal-muthukumar-47561a24a/">LinkedIn</a> |
   <a href="https://twitter.com/harvind_here">X</a> | 
-  <a href="https://harvind-here.github.io/harvind-here/">Website</h1>
+  <a href="https://harvind-here.vercel.app/">Website</h1>
 </p>
 
 <!-- Favorite Quote -->
